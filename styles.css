@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset */
+body {
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+/* Layout principal */
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Seção do formulário */
+.form-section {
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff; 
+}
+
+.voltar {
+    text-decoration: none;
+    color: #57534E;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 16px;
+    color: #292524;
+    font-weight: 400;
+    color: #57534E;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0 10px;
+}
+
+/* Campos do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #57534E;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Upload Box */
+.upload-box {
+    width: 100%;
+    padding: 15px;
+    border: 2px dashed #ccc;
+    text-align: center;
+    color: #888;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+/* Campos em grupo */
+.endereco-group {
+    display: flex;
+    gap: 48px;
+}
+
+.endereco-group div {
+    flex: 1;
+}
+
+/* Erro de email */
+.erro {
+    border: 1px solid red;
+    background-color: #ffecec;
+}
+
+.mensagem-erro {
+    color: red;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+/* Trilhas */
+.trilhas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.trilha {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000CC;
+    padding-top: 32px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    gap: 8px;
+    border: 1px solid #D6D3D1;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    cursor: pointer;
+}
+
+.trilha.selecionada {
+    border: 2px solid #F3541C;
+}
+
+/* Checkbox */
+.checkbox {
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkbox input {
+    margin-right: 8px;
+}
+
+.link {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Botões */
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cancelar {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}
+
+.inscricao {
+    background-color: red;
+    color: white;
+}
+
+.imagem-section {
+    width: 50%;
+    height: 700px;
+    background-color: #2135A6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-section img {
+    width: 60%; /* Ajuste conforme necessário */
+    max-width: 400px;
+}
