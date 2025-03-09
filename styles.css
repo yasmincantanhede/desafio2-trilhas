@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Reset */
 body {
     font-family: 'poppins', sans-serif;
     font-weight: 600;
@@ -15,21 +14,18 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Layout principal */
 .container {
     display: flex;
-    width: 80%;
     max-width: 1000px;
     background: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
     overflow: hidden;
+    align-items: stretch;
+    gap: 24px;
 }
 
-/* Seção do formulário */
 .form-section {
     width: 50%;
-    padding: 30px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,7 +60,6 @@ h2 {
     margin: 20px 0 10px;
 }
 
-/* Campos do formulário */
 form {
     display: flex;
     flex-direction: column;
@@ -77,15 +72,22 @@ label {
     margin: 10px 0 5px;
 }
 
+.valid {
+    border: 2px solid #F3541C;
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px 4px #FEE7D6;
+    outline: none;
+}
+
 input, select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
+    margin-bottom: 10px; 
 }
 
-/* Upload Box */
 .upload-box {
     width: 100%;
     padding: 15px;
@@ -96,29 +98,52 @@ input, select {
     cursor: pointer;
 }
 
-/* Campos em grupo */
 .endereco-group {
     display: flex;
     gap: 48px;
+}
+
+.rua {
+    background-color: #E7E5E4;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #8F8881;
+}
+
+.cidade {
+    background-color: #E7E5E4;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #8F8881;
+}
+
+.uf {
+    background-color: #E7E5E4;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #8F8881;
 }
 
 .endereco-group div {
     flex: 1;
 }
 
-/* Erro de email */
 .erro {
-    border: 1px solid red;
-    background-color: #ffecec;
+    border: 2px solid #DC2626;
+    border-radius: 8px;
 }
 
 .mensagem-erro {
-    color: red;
-    font-size: 12px;
-    margin-top: 3px;
+    font-family: 'Poppins', sans-serif;
+    color: #DC2626;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
 }
 
-/* Trilhas */
 .trilhas {
     display: flex;
     flex-wrap: wrap;
@@ -146,7 +171,6 @@ input, select {
     border: 2px solid #F3541C;
 }
 
-/* Checkbox */
 .checkbox {
     justify-content: flex-start;
     align-items: center;
@@ -163,7 +187,7 @@ input, select {
     cursor: pointer;
 }
 
-/* Botões */
+
 .botoes {
     display: flex;
     justify-content: space-between;
@@ -190,15 +214,35 @@ button {
 }
 
 .imagem-section {
-    width: 50%;
-    height: 700px;
+    width: 50%; 
+    height: 800px;
     background-color: #2135A6;
     display: flex;
+    flex-direction: column;
+    justify-content: center; 
     align-items: center;
-    justify-content: center;
+    padding: 20px;
+    position: relative;
 }
 
-.imagem-section img {
-    width: 60%; /* Ajuste conforme necessário */
-    max-width: 400px;
+.imagem-section img:first-child {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 50%; 
+    top: 140px;
+    transform: translateX(-50%);
 }
+
+.imagem-section img:last-child {
+    position: absolute;
+    bottom: 40px; 
+    width: 212.25px;
+    height: 26.49px;
+}
+
+
+
+
+
+
